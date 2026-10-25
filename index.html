@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home | MediNova Hospital</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MediNova Hospital - modern healthcare with experienced doctors and advanced facilities.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    @media (max-width: 767.98px) {
+      .carousel-caption { margin-left: 1rem !important; margin-right: 1rem !important; width: auto !important; }
+      .carousel-caption .btn { width: auto !important; padding-left: 1rem; padding-right: 1rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm navbar-dark p-0" style="background-color: #0b2545;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">
+        <img src="images/logo.png" alt="MediNova Hospital Logo" style="width:180px; margin-left: 30px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"
+        aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ms-auto align-items-sm-center" style="font-size: large; gap: 12px;">
+          <li class="nav-item">
+            <a class="nav-link active" href="home.html" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Services</a>
+            <ul class="dropdown-menu" style="font-size: larger;">
+              <li><a class="dropdown-item" href="services.html#emergency">Emergency Care</a></li>
+              <li><a class="dropdown-item" href="services.html#cardiology">Cardiology</a></li>
+              <li><a class="dropdown-item" href="services.html#dental">Dental Care</a></li>
+              <li><a class="dropdown-item" href="services.html#neurology">Neurology</a></li>
+              <li><a class="dropdown-item" href="services.html#pharmacy">Pharmacy</a></li>
+              <li><a class="dropdown-item" href="services.html#laboratory">Laboratory</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary d-inline-flex align-items-center justify-content-center ms-sm-4 me-sm-4 my-2 my-sm-0"
+          style="min-width: 200px; height: 50px;">Book Appointment</a>
+      </div>
+    </div>
+  </nav>
+
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner" style="height: 700px;">
+      <div class="carousel-item active">
+        <img src="images/MediNova Hospital at Dusk.png" alt="MediNova Hospital building at dusk" class="d-block" style="width:100%; height:700px; object-fit:cover;">
+
+        <div class="carousel-caption position-absolute top-0 start-0 text-start w-50 mt-5" style="margin-left: 190px;">
+          <h4 style="font-size: x-large;">Welcome To MediNova Hospital</h4>
+          <h1 style="font-size: clamp(2rem, 7.0vw, 90px);">Your Health</h1>
+          <h1 style="font-size: clamp(2rem, 7.0vw, 90px); color: #064f86;">Our Priority</h1>
+          <p style="font-size: large;">We provide high quality medical care with a team
+            of experienced <br> doctors and modern facilities.</p>
+          <a href="contact.html" class="btn btn-primary mt-5 d-inline-flex align-items-center justify-content-center" style="width: 200px; margin-right: 40px; height: 60px; font-size: 18px; background-color: #064f86;">Book Appointment</a>
+          <a href="services.html" class="btn btn-outline-light mt-5  d-inline-flex align-items-center justify-content-center" style="width: 150px; margin-right: 40px; height: 60px; font-size: 19px;">Our Services</a>
+        </div>
+
+      </div>
+      <div class="carousel-item">
+        <img src="images/home-img2.jpg" alt="Expert surgical care at MediNova Hospital" class="d-block" style="width:100%; height:700px; object-fit:cover;">
+        <div class="carousel-caption position-absolute top-0 end-0 text-end mt-5 pe-4"
+          style="margin-right: 170px;">
+          <h4 style="font-size: x-large;">Expert Surgical Care</h4>
+          <h1 style="font-size: clamp(2rem, 5.5vw, 70px);">Precision & Care</h1>
+          <h1 style="font-size: clamp(2rem, 5.5vw, 70px); color: #7a7a7a;">In Every Surgery</h1>
+          <p style="font-size: large;">
+            Our team of highly skilled surgeons and medical <br> specialists are dedicated to delivering safe <br> and
+            successful surgical outcomes.
+          </p>
+          <a href="about.html#doctors" class="btn btn-outline-light mt-5 d-inline-flex align-items-center justify-content-center" style="width: 200px; height: 60px; font-size: 18px; margin-right: 15px;">Meet Our Surgeons</a>
+          <a href="services.html" class="btn btn-secondary mt-5 d-inline-flex align-items-center justify-content-center" style="width: 190px; height: 60px; font-size: 19px;">Our Specialities</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/home-img3.jpg" alt="Advanced medical technology at MediNova Hospital" class="d-block" style="width:100%; height:700px; object-fit:cover;">
+        <div class="carousel-caption position-absolute top-0 start-0 text-start w-50 mt-5" style="margin-left: 190px;">
+          <h4 style="font-size: x-large;">State-Of-The-Art Technology</h4>
+          <h1 style="font-size: clamp(2rem, 5.1vw, 65px);">Advanced Medical</h1>
+          <h1 style="font-size: clamp(2rem, 5.9vw, 75px); color: #00a896;">Procedures </h1>
+          <p style="font-size: large;">
+           Equipped with modern technology and cutting-edge <br> facilities  to ensure the highest standards of <br> healthcare treatment.
+          </p>
+          <a href="contact.html" class="btn text-white mt-5 d-inline-flex align-items-center justify-content-center" style="width: 200px; margin-right: 40px; height: 60px; font-size: 18px; background-color: #00a896;">Book Appointment</a>
+          <a href="services.html" class="btn btn-outline-light mt-5  d-inline-flex align-items-center justify-content-center" style="width: 150px; margin-right: 40px; height: 60px; font-size: 19px;">Our Services</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-md-6">
+
+        <div class="card-body p-4">
+          <h2 class="mb-0" style="color: #0461a8; font-weight: bold;">About Our Hospital </h2>
+          <hr class="mt-1 mb-3 opacity-100" style="width: 60px; border-top: 4px solid #055da1;">
+          <p class="mt-2">MediNova Hospital is a modern healthcare center committed to providing the best medical services with compassion, trust, and excellence. Our mission is to keep you healthy and safe.</p>
+          <a href="about.html" class="btn btn-primary" style="width: 160px;">Learn More</a>
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="card-body text-center p-2">
+          <img src="images/home-cont.jpg" alt="MediNova Hospital" class="img-fluid rounded"
+            style="width: 100%; height: 250px; object-fit: cover;">
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="row g-4">
+      <div class="col-12">
+        <h2 class="mb-0 mt-5" style="color: #0461a8; font-weight: bolder;">Our Services</h2>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body text-center p-4">
+
+            <i class="fa-solid fa-truck-medical fs-1 mb-4" style="color: #058cf3;"> </i>
+            <h3 style="color: #05416e;">Emergency Care</h3>
+            <p>24/7 emergency services <br> with quick response.</p>
+            <a href="services.html#emergency" class="btn btn-outline-light" style="color: #058cf3; font-weight: bolder;">Read More &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body text-center p-4">
+            <i class="fa-solid fa-stethoscope fs-1 mb-4" style="color: #058cf3;"></i>
+            <h3 style="color: #05416e;">Expert Doctors</h3>
+            <p>Experienced and professional <br> doctors for your case.</p>
+            <a href="about.html#doctors" class="btn btn-outline-light" style="color: #058cf3; font-weight: bolder;">Read More &rarr;</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body text-center p-4">
+            <i class="fa-regular fa-square-plus fs-1 mb-4" style="color: #058cf3;"></i>
+            <h3 style="color: #05416e;">Modern Facilities</h3>
+            <p>Advanced technology for <br> better treatment.</p>
+            <a href="about.html" class="btn btn-outline-light" style="color: #058cf3; font-weight: bolder;">Read More &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+
+  <footer style="background-color: #0b2545;">
+    <div class="container-fluid d-flex flex-wrap align-items-center justify-content-center justify-content-md-between gap-3 py-3 px-4">
+      <a href="home.html">
+        <img src="images/logo.png" alt="MediNova Hospital Logo" style="width: 130px;">
+      </a>
+
+      <ul class="nav justify-content-center gap-2">
+        <li class="nav-item"><a class="nav-link text-light" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link text-light" href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="d-flex align-items-center gap-3">
+        <a href="#" class="text-light" aria-label="Facebook"><i class="fa-brands fa-facebook-f fs-4"></i></a>
+        <a href="#" class="text-light" aria-label="Instagram"><i class="fa-brands fa-instagram fs-4"></i></a>
+        <a href="#" class="text-light" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter fs-4"></i></a>
+        <a href="#" class="text-light" aria-label="YouTube"><i class="fa-brands fa-youtube fs-4"></i></a>
+      </div>
+    </div>
+
+    <div class="text-center w-100 pb-3">
+      <p class="mb-0" style="color: rgb(179, 179, 179); font-size: small;">
+        &copy; 2026 MediNova Hospital. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+
+
+
+
+</body>
+
+</html>
