@@ -96,7 +96,7 @@
             <button type="reset" class="btn btn-outline-primary" style="width: 160px;">Clear</button>
 
             <div id="formSuccess" class="alert alert-success d-none mt-3 mb-0" role="alert">
-              Thank you! Your message has been received. We will get back to you soon.
+              Thank you! Your message has been sent. We will get back to you soon.
             </div>
           </form>
 
@@ -175,28 +175,51 @@
   </footer>
 
 
-  <script>
-    // NOTE: there is no server to receive the form, so this only validates and shows a confirmation.
-    // To really send messages, connect the form to a backend or a service such as Formspree.
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+    emailjs.init({ publicKey: "wLnb23T_LgKvYqZZn" });
+
     const form = document.getElementById("contactForm");
     const success = document.getElementById("formSuccess");
+
     form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      if (!form.checkValidity()) {
-        e.stopPropagation();
-        form.classList.add("was-validated");
-        success.classList.add("d-none");
-        return;
-      }
-      form.reset();
-      form.classList.remove("was-validated");
-      success.classList.remove("d-none");
+        e.preventDefault();
+
+        // Pehle form ki validation check karo
+        if (!form.checkValidity()) {
+            e.stopPropagation();
+            form.classList.add("was-validated");
+            success.classList.add("d-none");
+            return;
+        }
+
+        const button = form.querySelector('button[type="submit"]');
+        button.disabled = true;
+        button.textContent = "Sending...";
+
+        emailjs.sendForm("service_ykbp265", "template-zev7s7w", form)
+            .then(function () {
+                form.reset();
+                form.classList.remove("was-validated");
+                success.classList.remove("d-none");
+            }, function (error) {
+                console.error("EmailJS error:", error);
+                alert("Message could not be sent. Please try again later.");
+            })
+            .finally(function () {
+                button.disabled = false;
+                button.textContent = "Send Message";
+            });
     });
+
+    // "Clear" button dabane par message aur validation hata do
     form.addEventListener("reset", function () {
-      form.classList.remove("was-validated");
-      success.classList.add("d-none");
+        form.classList.remove("was-validated");
+        success.classList.add("d-none");
     });
-  </script>
+</script>
 </body>
 
 </html>
